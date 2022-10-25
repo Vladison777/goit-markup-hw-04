@@ -7,6 +7,7 @@
     --main-white:#FFFFFF;
     --section-team:#F5F4FA;
     --portfolio-header:#ECECEC;
+    --icon-gray-fill:#AFB1B8;
 }
 
 
@@ -165,7 +166,7 @@ img {
 }
 
 /* -------------Main------------ */
-.section-hero{
+.section{
     background-color:var(--main-section);
     padding: 200px 0px;
     background-image:linear-gradient(
@@ -219,10 +220,8 @@ img {
 }
 
 
-.section-about{
-    padding-top: 94px;
-    padding-bottom: 0;
-    
+.about{
+    padding-top: 94px; 
 }
 
 .visually-hidden{
@@ -272,11 +271,6 @@ img {
     letter-spacing: 0.03em;
 }
 
-.section-about{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .section-title{
     color:var(--secondary-text);
     font-size: 36px;
@@ -290,7 +284,7 @@ img {
     gap: 30px;
 }
 
-.section-team{
+.team{
     background-color: var(--section-team);
     padding-top: 94px;
     padding-bottom: 94px;
@@ -343,12 +337,15 @@ img {
 .icon-networks{
     width: 100%;
     height: 100%;
-    background: var(--main-white);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--main-white);
+    color: var(--icon-gray-fill);
+}
+
+.icon-networks-icon{
+    fill: currentColor;
 }
 
 .icon-networks-icon{
@@ -356,19 +353,25 @@ img {
     height: 20px;
 }
 
-.icon-networks-icon{
-    fill: currentColor;
-}
-
-
-.icon-networks:hover,
-.icon-networks:focus{
+.icon-networks:hover{
     background-color:var(--accent-color);
-    color: var(--main-white);
+}
+
+.icon-networks:hover .icon-networks-icon{
+    fill: var(--main-white);
+}
+
+.icon-networks:focus{
+    background-color: var(--accent-color);
+}
+
+.icon-networks:focus .icon-networks-icon{
+    fill: var(--main-white);
+    background-color: var(--accent-color);
 }
 
 
-.section-client{
+.client{
     padding-bottom: 94px;
     padding-top: 94px;
     cursor: pointer;
@@ -384,6 +387,7 @@ img {
     height: 92px;
 }
 
+
 .regular-customers{
     width: 100%;
     height: 100%;
@@ -392,15 +396,27 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+    color: #AFB1B8;
 }
 
 .regular-customers-icon{
     fill: currentColor;
 }
 
-.regular-customers-icon:hover{
-    color: var(--accent-color);
-    background-color: var(--main-white);
+.regular-customers:hover{
+    border-color:var(--accent-color) ;
+}
+
+.regular-customers:hover .regular-customers-icon{
+    fill: var(--accent-color);
+}
+
+.regular-customers:focus{
+    border-color:var(--accent-color) ;
+}
+
+.regular-customers:focus .regular-customers-icon{
+    fill: var(--accent-color);
 }
 
 .regular-customers-icon{
@@ -411,10 +427,21 @@ img {
 
 
 /* --------Footer---------- */
-.footer{
+.footer-main{
     background-color:var(--main-section);
     padding-top:60px; ;
     padding-bottom: 60px;
+}
+
+.container-one{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.container-one{
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
 }
 
 .logo-footer>span:first-child {
@@ -496,14 +523,28 @@ img {
     background-color: rgba(255, 255, 255, 0.1);
  }
 
-.container-footer {
+ .regular-customers-footer{
     display: flex;
-    align-items: baseline;
-    gap: 70px;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    color: var(--white-text);
+ }
+
+.icon-join{
+    fill: currentColor;
 }
 
-.icon-footer:hover,
-.icon-footer:focus{
+.regular-customers-footer:hover{
+    background-color: var(--accent-color);
+}
+
+.regular-customers-footer:hover .icon-join{
+    fill: var(--main-white);
+}
+
+.regular-customers-footer:focus{
     background-color: var(--accent-color);
 }
 
@@ -541,6 +582,8 @@ img {
  .button-portfolio:hover{
     background-color: var(--accent-color);
     color: var(--main-white);
+    transition: 0.3s;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
  }
 
  .projects{
@@ -564,6 +607,9 @@ img {
  .pictures {
     width: calc((100% - 60px) / 3);
     border: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
  }
 
  .list-pictures{

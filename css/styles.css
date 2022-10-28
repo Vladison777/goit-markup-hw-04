@@ -128,6 +128,10 @@ img {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -148,6 +152,10 @@ img {
     letter-spacing: 0.02em;
     display: flex;
     align-items: center;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover, 
@@ -342,6 +350,10 @@ img {
     align-items: center;
     justify-content: center;
     color: var(--icon-gray-fill);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-networks-icon{
@@ -391,6 +403,9 @@ img {
     justify-content: center;
     border-radius: 4px;
     color: #AFB1B8;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customers-icon{
@@ -480,6 +495,9 @@ img {
     letter-spacing: 0.03em;
     padding-bottom: 9px;
 
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
  .footer-contact:hover,
  .footer-contact:focus{
@@ -521,6 +539,9 @@ img {
     width: 100%;
     border-radius: 50%;
     color:var(--main-white);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 .icon-join{
@@ -553,6 +574,9 @@ img {
     Border: none;
     padding: 6px 22px;
     border-radius: 4px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .button-portfolio{
